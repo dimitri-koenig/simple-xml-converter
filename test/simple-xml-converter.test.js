@@ -89,4 +89,21 @@ describe('XmlConverter', () => {
         var result = XmlConverter.toXml(obj);
         expect(result).to.equal(xml);
     });
+
+    it('escapes special chars in arrays properly', () => {
+        var obj = {
+            checkInArray: {
+                entries: [
+                    '"Entry 1"',
+                    '\'Entry 2\'',
+                    '1 < 2',
+                    '2 > 1',
+                    '1 & 2'
+                ]
+            }
+        };
+        var xml = '<?xml version="1.0" encoding="UTF-8"?><checkInArray><entries>&apos;Entry 1&apos;</entries><entries>&apos;Entry 2&apos;</entries><entries>1 &lt; 2</entries><entries>2 &gt; 1</entries><entries>1 &amp; 2</entries></checkInArray>';
+        var result = XmlConverter.toXml(obj);
+        expect(result).to.equal(xml);
+    });
 });
