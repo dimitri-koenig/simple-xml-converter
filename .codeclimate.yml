@@ -5,5 +5,3 @@ ratings:
    paths:
    - lib/**
    - test/**
-exclude_paths:
-- "examples/*"
