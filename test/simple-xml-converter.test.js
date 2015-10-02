@@ -106,4 +106,33 @@ describe('XmlConverter', () => {
         var result = XmlConverter.toXml(obj);
         expect(result).to.equal(xml);
     });
+
+    it('escapes special chars in objects properly', () => {
+        var obj = {
+            checkInObject:  {
+                quote: '"Entry 1"',
+                doublequote: '\'Entry 2\'',
+                lesserThan: '1 < 2',
+                greaterThen: '2 > 1',
+                and: '1 & 2'
+            }
+        };
+        var xml = '<?xml version="1.0" encoding="UTF-8"?><checkInObject><quote>&apos;Entry 1&apos;</quote><doublequote>&apos;Entry 2&apos;</doublequote><lesserThan>1 &lt; 2</lesserThan><greaterThen>2 &gt; 1</greaterThen><and>1 &amp; 2</and></checkInObject>';
+        var result = XmlConverter.toXml(obj);
+        expect(result).to.equal(xml);
+    });
+
+    it('handles numbers and other property types properly', () => {
+        var obj = {
+            typeChecks:  {
+                integerCheck: 1,
+                floatCheck: 1.2,
+                nullShouldBeIgnored: null,
+                undefinedShouldBeIgnored: undefined
+            }
+        };
+        var xml = '<?xml version="1.0" encoding="UTF-8"?><typeChecks><integerCheck>1</integerCheck><floatCheck>1.2</floatCheck></typeChecks>';
+        var result = XmlConverter.toXml(obj);
+        expect(result).to.equal(xml);
+    });
 });
