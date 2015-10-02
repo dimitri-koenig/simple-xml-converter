@@ -3,6 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased][unreleased]
+### Internal
+* Added tests for 100% coverage (#2)
 
 ## [1.0.1][2015-10-01]
 ### Bugfixes
