@@ -1,7 +1,7 @@
 {
   "name": "simple-xml-converter",
   "description": "Converts javascript objects to simple xml strings",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Dimitri König <dimitri@dimitrikoenig.net>",
   "contributors": [
     {
