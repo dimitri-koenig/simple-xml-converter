@@ -135,4 +135,42 @@ describe('XmlConverter', () => {
         var result = XmlConverter.toXml(obj);
         expect(result).to.equal(xml);
     });
+
+    it('indents properly', () => {
+        var obj = {
+            entriesObject: {
+                entry: [
+                    { value: 'Entry 1' },
+                    { value: 'Entry 2' },
+                    { value: 'Entry 3' }
+                ]
+            },
+            entriesArray: {
+                entry: [
+                    'Entry 1',
+                    'Entry 2',
+                    'Entry 3'
+                ]
+            }
+        };
+        var xml = `<?xml version="1.0" encoding="UTF-8"?>
+<entriesObject>
+    <entry>
+        <value>Entry 1</value>
+    </entry>
+    <entry>
+        <value>Entry 2</value>
+    </entry>
+    <entry>
+        <value>Entry 3</value>
+    </entry>
+</entriesObject>
+<entriesArray>
+    <entry>Entry 1</entry>
+    <entry>Entry 2</entry>
+    <entry>Entry 3</entry>
+</entriesArray>`;
+        var result = XmlConverter.toXml(obj, 4);
+        expect(result).to.equal(xml);
+    });
 });
