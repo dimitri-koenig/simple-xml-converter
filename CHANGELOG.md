@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [unreleased][unreleased]
 
+## [1.1.1][2015-10-04]
+### Feature
+* Added missing example into README (#3)
+
 ## [1.1.0][2015-10-03]
 ### Feature
 * Added indentation for xml build (#4)
