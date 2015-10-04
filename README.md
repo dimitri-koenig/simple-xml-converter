@@ -17,6 +17,16 @@ $ npm install simple-xml-converter --save
 
 ## Example
 
+```javascript
+var simpleXmlConverter = require('simple-xml-converter');
+
+// without indentation
+var xmlString = simpleXmlConverter.toXml(someObject);
+
+// with indentation of 4 spaces
+var xmlString = simpleXmlConverter.toXml(someObject, 4);
+```
+
 
 ## Versioning
 
