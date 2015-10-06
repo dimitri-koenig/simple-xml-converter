@@ -3,7 +3,6 @@
 .DS_STORE
 npm-debug.log
 *~
-examples
 .editorconfig
 .eslintrc
 .git
@@ -17,6 +16,4 @@ lib
 node_modules
 test
 Makefile
-docs 
-mkdocs.yml
 .codeclimate.yml
