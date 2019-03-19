@@ -1,7 +1,7 @@
 {
   "name": "simple-xml-converter",
   "description": "Converts javascript objects to simple xml strings",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Dimitri König <dimitri@dimitrikoenig.net>",
   "contributors": [
     {
@@ -17,7 +17,7 @@
     "url": "https://github.com/dimitri-koenig/simple-xml-converter/issues"
   },
   "dependencies": {
-    "lodash": "^3.10.1"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "babel-cli": "^6.0.14",
