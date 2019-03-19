@@ -11,7 +11,7 @@ build: ; @echo 'Making build...'
 	done
 
 test: ; @echo 'Running tests...'
-	@NODE_ENV=test ./node_modules/mocha/bin/mocha test
+	@NODE_ENV=test ./node_modules/mocha/bin/mocha --require @babel/register test
 	@NODE_ENV=test ./node_modules/eslint/bin/eslint.js lib test
 
 install: ; @echo 'Installing packages...'
