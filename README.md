@@ -1,8 +1,6 @@
 # Simple XML Converter [![Build Status](https://travis-ci.org/dimitri-koenig/simple-xml-converter.svg?branch=master)](https://travis-ci.org/dimitri-koenig/simple-xml-converter)
 
 [![npm version](https://badge.fury.io/js/simple-xml-converter.svg)](http://badge.fury.io/js/simple-xml-converter)
-[![Test Coverage](https://codeclimate.com/github/dimitri-koenig/simple-xml-converter/badges/coverage.svg)](https://codeclimate.com/github/dimitri-koenig/simple-xml-converter/coverage)
-[![Code Climate](https://codeclimate.com/github/dimitri-koenig/simple-xml-converter/badges/gpa.svg)](https://codeclimate.com/github/dimitri-koenig/simple-xml-converter)
 [![Dependency Status](https://david-dm.org/dimitri-koenig/simple-xml-converter.svg)](https://david-dm.org/dimitri-koenig/simple-xml-converter)
 
 Simple XML Converter is a Javascript module which converts javascript objects to simple xml strings.

@@ -12,8 +12,5 @@ cache:
   directories:
     - node_modules
 
-after_success:
-  - make publish-coverage
-
 matrix:
   fast_finish: true
