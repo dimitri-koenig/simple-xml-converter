@@ -20,10 +20,12 @@ clean: ; @echo 'Cleaning up...'
 	@rm -fr node
 
 publish: ; @echo 'Publishing...'
+	@make
 	@git push --tags
 	@npm publish
 
 publish-beta: ; @echo 'Publishing beta...'
+	@make
 	@git push --tags
 	@npm publish --tag beta
 
