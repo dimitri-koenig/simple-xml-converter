@@ -1,7 +1,7 @@
 BABEL = ./node_modules/.bin/babel
 SRC = $(wildcard lib/*.js)
 
-all: clean install test collect-coverage build
+all: clean install test build
 
 build: ; @echo 'Making build...'
 	@mkdir -p node/
@@ -12,7 +12,6 @@ build: ; @echo 'Making build...'
 
 test: ; @echo 'Running tests...'
 	@NODE_ENV=test ./node_modules/mocha/bin/mocha test
-	@NODE_ENV=test ./node_modules/eslint/bin/eslint.js lib test
 
 install: ; @echo 'Installing packages...'
 	@npm install
