@@ -1,4 +1,4 @@
-import XmlConverter from '../lib/simple-xml-converter';
+import XmlConverter from '../lib/simple-xml-converter.js';
 import {expect} from 'chai';
 
 describe('XmlConverter', () => {

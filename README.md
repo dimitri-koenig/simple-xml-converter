@@ -1,7 +1,4 @@
-# Simple XML Converter [![Build Status](https://travis-ci.org/dimitri-koenig/simple-xml-converter.svg?branch=master)](https://travis-ci.org/dimitri-koenig/simple-xml-converter)
-
-[![npm version](https://badge.fury.io/js/simple-xml-converter.svg)](http://badge.fury.io/js/simple-xml-converter)
-[![Dependency Status](https://david-dm.org/dimitri-koenig/simple-xml-converter.svg)](https://david-dm.org/dimitri-koenig/simple-xml-converter)
+# Simple XML Converter
 
 Simple XML Converter is a Javascript module which converts javascript objects to simple xml strings.
 
@@ -16,13 +13,13 @@ $ npm install simple-xml-converter --save
 ## Example
 
 ```javascript
-var simpleXmlConverter = require('simple-xml-converter');
+import SimpleXmlConverter from 'simple-xml-converter';
 
 // without indentation
-var xmlString = simpleXmlConverter.toXml(someObject);
+const xmlString = SimpleXmlConverter.toXml(someObject);
 
 // with indentation of 4 spaces
-var xmlString = simpleXmlConverter.toXml(someObject, 4);
+const xmlString = SimpleXmlConverter.toXml(someObject, 4);
 ```
 
 
