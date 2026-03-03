@@ -1,5 +1,8 @@
 # Simple XML Converter
 
+> **⚠️ DEPRECATED / ARCHIVED**
+> This repository is no longer maintained. All the necessary code has been integrated into [simple-vertec-api](https://github.com/dimitri-koenig/simple-vertec-api). Please use that package instead.
+
 Simple XML Converter is a Javascript module which converts javascript objects to simple xml strings.
 
 ## Installation
